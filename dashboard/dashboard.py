@@ -16,7 +16,7 @@ st.write(
 )
 
 with st.sidebar:
-    st.image('C:/Users/Akmal N.F/Documents/Project/Learn_Python/Dicoding/assignment/data/Sumire Persona 5.jpg')
+    st.image('./data/Sumire Persona 5.jpg')
     st.write(
         """
             # Akmal Nuur Fauzan | ML - 47
@@ -24,12 +24,12 @@ with st.sidebar:
     )
 
 
-dfd = pd.read_csv('C:/Users/Akmal N.F/Documents/Project/Learn_Python/Dicoding/assignment/data/day.csv')
+dfd = pd.read_csv('./data/day.csv')
 
 dfd_new = dfd.copy()
 dfd_new['dteday'] = pd.to_datetime(dfd_new['dteday'])
 
-dfh = pd.read_csv('C:/Users/Akmal N.F/Documents/Project/Learn_Python/Dicoding/assignment/data/hour.csv')
+dfh = pd.read_csv('./data/hour.csv')
 
 dfh_new = dfh.copy()
 dfh_new['dteday'] = pd.to_datetime(dfh_new['dteday'])
