@@ -131,7 +131,7 @@ st.title('Average Bike Rentals Analysis')
 # Display the bar plot in the Streamlit app
 st.plotly_chart(fig)
 
-st.title('Visualisasi Pengguna Terdaftar dan Kasual Seiring Waktu')
+st.title('Visualizing Registered and Casual Users Over Time')
 
 fig = go.Figure()
 
@@ -145,10 +145,10 @@ fig.update_layout(
     title='Registered and Casual Users Over Time',
     xaxis_title='Datetime',
     yaxis_title='Count',
-    hovermode='x unified',  # Menampilkan hover untuk kedua trace secara bersamaan
+    hovermode='x unified',  # Display hover for both traces simultaneously
     xaxis=dict(
-        tickformat='%Y-%m-%d',  # Format tanggal untuk keterbacaan yang lebih baik
-        rangeslider_visible=True  # Mengaktifkan slider rentang
+        tickformat='%Y-%m-%d',  # Date format for better readability
+        rangeslider_visible=True  # Enable range slider
     )
 )
 
@@ -194,4 +194,4 @@ ax[2].set_title("By Monetary", loc="center", fontsize=18)
 ax[2].tick_params(axis='x', labelsize=15)
  
 st.pyplot(fig)
-st.caption('Copyright©️ Akmal Nuur Fauzan')
+st.caption('Copyright©️ Akmal Nuur Fauzan 2024')
