@@ -16,7 +16,7 @@ st.write(
 )
 
 with st.sidebar:
-    st.image('./data/Sumire Persona 5.jpg')
+    st.image('./assets/Sumire Persona 5.jpg')
     st.write(
         """
             # Akmal Nuur Fauzan | ML - 47
